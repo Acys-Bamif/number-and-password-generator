@@ -1,0 +1,178 @@
+html {
+	font-size:16px;
+	font-family:sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#button {
+	max-width:500px;
+	margin:auto;
+	display:flex;
+}
+#button button {
+	width:50%;
+	display:inline-block;
+	padding:15px 0;
+	margin:0;
+	font-size:16px;
+	border:none;
+	outline:none;
+	background-color:rgba(0,0,0,0);
+}
+.tab {
+	margin:0px auto 0;
+	padding:30px;
+	display:none;
+	max-width:500px;
+	min-height:calc(100vh - 30px);
+	background-color: #624;
+	color:#fff;
+}
+.tab h2:first-of-type {
+	text-align:center;
+	margin-bottom:20px;
+}
+h3 {
+	margin:10px 0;
+}
+#tab2 label {
+	width:19%;
+	display:inline-block;
+	font-size:1.5rem;
+}
+.password,
+#resultNumber {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: rgb(200, 200, 200);
+	border-radius:10px;
+	margin-bottom:10px;
+}
+.password p,
+#resultNumber {
+	padding: 6px 10px;
+	display:inline-block;
+	font-size:1.2rem;
+}
+.password i {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 6px 10px;
+	border-radius:0 10px 10px 0;
+	float:right;
+	font-size:1.2rem;
+}
+#tab1 label {
+	display:block;
+	font-size:1.3rem;
+	margin:3% 1%;
+}
+input[type="range"] {
+	-webkit-appearance:none;
+	width:80%;
+	height:0.2rem;
+	background:#f66;
+	border:2px solid #f66;
+	outline:none;
+	border-radius:10px;
+}
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance:none;
+	width:0.8rem;
+	height:1.5rem;
+	background:#f66;
+	border:2px solid #fff;
+	border-radius:2px 2px 15px 15px;
+	cursor:pointer;
+}
+#passwordLength,
+#range1value {
+	background-color:#fff;
+	border:#f66 2px solid;
+	border-radius:5px;
+	font-size:1.5rem;
+	width:17%;
+	text-align:center;
+	padding:5px 3px;
+	color:#f66;
+	outline:none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	height:1.5rem;
+	width:1.5rem;
+	margin-right:10px;
+	color: #f66;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	background: none;
+	border:none;
+	outline: 0;
+	flex-grow: 0;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: background 300ms;
+	cursor: pointer;
+}
+input[type=checkbox]::before,
+input[type=radio]::before {
+	content: "";
+	color: transparent;
+	display: block;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+}
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+	background-color: currentcolor;
+}
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+	box-shadow: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+}
+.gen-btn {
+	padding:10px 20px;
+	border-radius:5px;
+	display:block;
+	cursor:pointer;
+	outline:none;
+	color:#fff;
+	font-size:1.3rem;
+	text-align:center;
+	outline:none;
+	background-color:#f66;
+	border:none;
+	width:100%;
+	margin:30px 0 0;
+}
+.input-container {
+	display:flex;
+	justify-content:space-between;
+	font-size:1.2rem;
+}
+.input-container p {
+	width:40%;
+	display:flex;
+	justify-content:space-between;
+}
+#valueMax,
+#valueMin {
+	background-color:#fff;
+	border:#f66 2px solid;
+	border-radius:5px;
+	font-size:1.5rem;
+	width:50px;
+	padding:5px 10px;
+	color:#f66;
+	outline:none;
+	margin-left:10px;
+}		
+#resultNumber {
+	font-size:1.5rem;
+}
